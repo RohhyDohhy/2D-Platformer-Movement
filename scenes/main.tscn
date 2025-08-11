@@ -1,3 +1,78 @@
-[gd_scene format=3 uid="uid://drhxfond302vi"]
+[gd_scene load_steps=3 format=3 uid="uid://drhxfond302vi"]
+
+[ext_resource type="PackedScene" uid="uid://cogxdyqsvmqn7" path="res://scenes/player.tscn" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://bl06bnmw8vdoa" path="res://scenes/platform.tscn" id="2_sugp2"]
 
 [node name="Main" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_0wfyh")]
+position = Vector2(323, 549)
+
+[node name="Platforms" type="Node" parent="."]
+
+[node name="Platform" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(0, 896)
+scale = Vector2(2.5, 1.451)
+
+[node name="Platform2" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1984, 0)
+rotation = -3.14159
+scale = Vector2(0.168, -7)
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(64, 0)
+rotation = -3.14159
+scale = Vector2(0.168, -7)
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1856, 64)
+rotation = -1.5708
+scale = Vector2(0.168, -14)
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(64, 576)
+scale = Vector2(0.176, 2.501)
+
+[node name="Platform13" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(-48, 8)
+scale = Vector2(0.451, 1.336)
+
+[node name="Platform14" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1120, -24)
+scale = Vector2(0.451, 1.336)
+
+[node name="Platform15" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1192, 112)
+scale = Vector2(0.221, 1.336)
+
+[node name="Platform16" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1744, 16)
+scale = Vector2(0.221, 1.336)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(160, 752)
+scale = Vector2(0.176, 2.501)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1616, 832)
+scale = Vector2(0.176, 2.501)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1688, 648)
+scale = Vector2(0.241, 2.501)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(1176, 496)
+scale = Vector2(0.406, 0.531)
+
+[node name="Platform10" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(392, 432)
+scale = Vector2(0.321, 0.531)
+
+[node name="Platform11" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(808, 376)
+scale = Vector2(0.321, 0.531)
+
+[node name="Platform12" parent="Platforms" instance=ExtResource("2_sugp2")]
+position = Vector2(808, 320)
+scale = Vector2(0.176, 0.531)
